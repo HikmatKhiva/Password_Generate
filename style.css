@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    /* colors */
+    --bg-color: #7bdaf3;
+    --bg-and-text-white: #ffffff;
+    --btn-succes: #16a085;
+    --border-color: #c7c7c7;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7bdaf3;
+    font-family: var(--font-poppins);
+}
+
+.container {
+    background: #e6f8f5;
+    padding: 3rem;
+    width: 460px;
+    height: 470px;
+    border-radius: 20px;
+}
+
+.container .display {
+    border: 2px solid #666;
+    width: 100%;
+    padding: 15px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #444;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.display svg {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: 20px;
+    cursor: pointer;
+}
+.display svg:hover{
+    color:rgb(9, 97, 148);
+}
+
+ul {
+    list-style: none;
+    padding: 20px 30px;
+}
+
+ul li {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+}
+
+.password input {
+    width: 90%;
+}
+
+.p-count {
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+.password p {
+    font-size: 20px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 35px;
+    background-color: #fff;
+    border: 1px solid #4444;
+}
+
+.btn {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.generate-btn {
+    padding: 10px 40px;
+    background-color: #16a085;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+#password-length {
+    appearance: none;
+    outline: none;
+    -webkit-appearance:none;
+    height: 8px;
+    margin-top: 1rem;
+    border-radius: 12px;
+    transition: opacity .2s;
+}
+#password-length::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance: none;
+    width: 14px;
+    height: 15px;
+    background: var(--btn-succes);
+    cursor: pointer;
+    border-radius: 50% ;
+}
+#password-length::-moz-range-thumb {
+    background: var(--btn-succes);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

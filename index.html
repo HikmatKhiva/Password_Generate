@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generated</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <p>T@$KrxS&xmZY</p>
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone"
+                class="svg-inline--fa fa-clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M448 0H224C188.7 0 160 28.65 160 64v224c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C512 28.65 483.3 0 448 0zM464 288c0 8.822-7.178 16-16 16H224C215.2 304 208 296.8 208 288V64c0-8.822 7.178-16 16-16h224c8.822 0 16 7.178 16 16V288zM304 448c0 8.822-7.178 16-16 16H64c-8.822 0-16-7.178-16-16V224c0-8.822 7.178-16 16-16h64V160H64C28.65 160 0 188.7 0 224v224c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64v-64h-48V448z">
+                </path>
+            </svg>
+        </div>
+        <ul>
+            <li>
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">Uppercase</label>
+            </li>
+            <li>
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">Lowercase</label>
+            </li>
+            <li>
+                <input type="checkbox" id="numbers" >
+                <label for="numbers">Numbers</label>
+            </li>
+            <li>
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols</label>
+            </li>
+        </ul>
+        <div class="p-count">
+            <label for="password-length">Password Length</label>
+            <div class="password">
+                <input type="range" min="6" max="36" value="12" id="password-length">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="generate-btn">Generate Password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
